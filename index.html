@@ -9,4 +9,13 @@ layout: default
     <h1>{{ product.title }}</h1>
     <p>{{ product.description }}</p>
   {% endfor %}
+</ul>
 
+<ul class="farmers">
+  {% for farmer in site.farmers %}
+  <li>
+    <img src="{{ farmer.thumbnail }}" alt="farmer.caption" />
+    <h1>{{ farmer.title }}</h1>
+    <p>{{ farmer.description }}</p>
+  {% endfor %}
+</ul>
